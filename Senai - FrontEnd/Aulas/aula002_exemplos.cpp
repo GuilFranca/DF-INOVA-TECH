@@ -9,11 +9,11 @@ int main(void){
 //	int num = 10;
 //	
 //	if(num == 20){
-//		printf("num é igual a 20.");
+//		printf("num Ã© igual a 20.");
 //	} else if (num == 10){
-//		printf("num é igual a 10.");
+//		printf("num Ã© igual a 10.");
 //	} else {
-//		printf("aí deu o krai memo.");
+//		printf("aÃ­ deu o krai memo.");
 //	}
 	
 //	int i;
