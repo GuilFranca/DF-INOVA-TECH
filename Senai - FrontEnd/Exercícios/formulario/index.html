@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <section>
+
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">  
+            <label for="">Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label for="">Email</label>
+            <input type="email" name="Email" placeholder="Digite seu email" autocomplete="off" required>
+            <label for="">Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem" required></textarea> <!-- área de texto -->
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="3ece324a-793c-4b74-9fc9-9c7745673422">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/formulario/obrigado.html">
+        </form><!-- method post: envia para o servidor. method get: consulta algum dado no servidor -->
+    </section>
+
+</body>
+</html>
