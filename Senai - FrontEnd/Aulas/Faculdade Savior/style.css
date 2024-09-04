@@ -1,0 +1,151 @@
+/* Inicio das configurações padrões */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #191d2b;
+    color: white;
+}
+/* Fim das configs padrões */
+
+/* Inicio das configs do cabeçalho e do nav */
+header{
+    background-color: #a42a15;
+    color: white;
+    padding: 2px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img{
+    width: 75px;
+    height: auto;
+}
+header a{
+    display: inline-block;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .2s;
+}
+nav ul li a:hover{
+    color: #fff;
+    transform: scale(1.25);
+}
+/* Fim das configs do cabeçalho e do nav */
+
+/* Inicio das config do main */
+main {
+    padding: 20px;
+    text-align: center;
+}
+main img {
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+}
+/* Fim das config do main */
+
+/* Estilos para os títulos principais e secunsários */
+main h1, main h2{
+    margin-bottom: 20px;
+
+}
+/* Fim Estilos para os títulos principais e secunsários */
+
+/* Estilo para o contêiner de vídeo */
+.video-container{
+    margin-top: 20px;
+}
+/* Fim do Estilo para o contêiner de vídeo */
+
+/* Estilo para o rodapé da página */
+
+footer{
+    background-color: #a42a15;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Fim do  Estilo para o rodapé da página */
+
+/* Inicio config formulario de contato */
+
+section#form {
+    background: #1d1d2e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Largura máxima do formulário */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#form h2 {
+    color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    color: #f5f5f5;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #a42a15;
+    box-shadow: 0 0 5px rgba(164, 42, 21, 0.5);
+}
+
+form button {
+    padding: 15px;
+    font-size: 16px;
+    background: #a42a15;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background: #8c1e12;
+    transform: scale(1.05);
+}
+
+/* Fim config formulario de contato */
