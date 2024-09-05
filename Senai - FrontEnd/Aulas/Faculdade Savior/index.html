@@ -19,9 +19,9 @@
         <nav> <!-- Barra Nava -->
             <ul>
                 <li><a href="index.html">Menu</a></li>
-                <li> <a href="#">Cursos</a> </li>
+                <li> <a href="cursos.html">Cursos</a> </li>
                 <li> <a href="contato.html">Contato</a> </li>
-                <li> <a href="#">Sobre</a> </li>
+                <li> <a href="sobre.html">Sobre</a> </li>
             </ul>
         </nav> <!-- Fim Barra Nava -->
 
@@ -49,19 +49,29 @@
 
             <!--Fim Vídeo do YouTube-->
 
-            <section id="contato">
-
-                <h2>Contato</h2>
-                <p>Entre em contato conosco para mais informações.</p>
-
-            </section>
-
         </section> <!-- Fim Cursos -->
 
     </main>
     <!-- Fim Seção Principal -->
 
-    
+    <section id="form">
+
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">  <!-- method post: envia para o servidor. method get: consulta algum dado no servidor -->
+            <label for="">Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label for="">Email</label>
+            <input type="email" name="Email" placeholder="Digite seu email" autocomplete="off" required>
+            <label for="">Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem" required></textarea> <!-- área de texto -->
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="3ece324a-793c-4b74-9fc9-9c7745673422">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/formulario/obrigado.html">
+        </form>
+
+    </section>
+
     <footer> <!-- Rodapé -->
         <p>&copy; 2024 Instituição de Ensino. Todos os direitos reservados.</p>
     </footer> <!-- Fim do Rodapé -->

@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Cursos</title>
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-
-
-
+</head>
 <body>
     
     <header> <!-- Cabeçalho -->
@@ -30,23 +28,39 @@
 
     </header> <!-- Fim do Cabeçalho -->
 
-    <section id="form">
+    <div class="container-tabela">
 
-        <h2>Contato</h2>
-        <form action="https://api.staticforms.xyz/submit" method="post">  <!-- method post: envia para o servidor. method get: consulta algum dado no servidor -->
-            <label for="">Nome</label>
-            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
-            <label for="">Email</label>
-            <input type="email" name="Email" placeholder="Digite seu email" autocomplete="off" required>
-            <label for="">Mensagem</label>
-            <textarea name="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem" required></textarea> <!-- área de texto -->
-            <button type="submit">Enviar</button>
+        <table border="1" class="tabela"> <!--Inicio da tabela de cursos-->
 
-            <input type="hidden" name="accessKey" value="3ece324a-793c-4b74-9fc9-9c7745673422">
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/formulario/obrigado.html">
-        </form>
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Turno</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <th>Front-End</th>
+                    <th>Matutino</th>
+                    <th>Gratuito</th>
+                </tr>
+                <tr>
+                    <th>Front-End</th>
+                    <th>Vespertino</th>
+                    <th>Gratuito</th>
+                </tr>
+                <tr>
+                    <th>Front-End</th>
+                    <th>Noturno</th>
+                    <th>Gratuito</th>
+                </tr>
+            </tbody>
+    
+        </table> <!--Fim da tabela de cursos-->
 
-    </section>
+    </div>
 
     <footer> <!-- Rodapé -->
         <p>&copy; 2024 Instituição de Ensino. Todos os direitos reservados.</p>

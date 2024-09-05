@@ -80,6 +80,7 @@ footer{
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
+    width: 100%;
 }
 
 /* Fim do  Estilo para o rodapé da página */
@@ -136,8 +137,8 @@ form textarea {
 /* Estilo para o estado de foco dos inputs e textarea */
 form input:focus,
 form textarea:focus {
-    border-color: #a42a15;
-    box-shadow: 0 0 5px rgba(164, 42, 21, 0.5);
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 /* Estilo para o botão de envio */
@@ -159,3 +160,67 @@ form button:hover {
     transform: scale(1.05);
 }
 /* Fim config formulario de contato */
+
+/* Inicio config tabela de cursos */
+
+.container-tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.tabela {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+.tabela thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tabela th, .tabela td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.tabela tbody tr {
+    color: #000000;
+    transition: background-color 0.3s ease;
+}
+
+.tabela tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela tbody tr:hover {
+    background-color: #d1e7dd;
+}
+
+.tabela tbody th {
+    font-weight: normal;
+}
+
+/* Fim config tabela de cursos */
+
+/* Inicio config Sobre nós */
+
+.container-sobre{
+    display: flex;
+    margin-top: 20px;
+}
+.container-sobre img{
+    max-height: 100px;
+    width: auto;
+    margin-left: 100px;
+}
+.texto-sobre{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* Fim config Sobre nós */
