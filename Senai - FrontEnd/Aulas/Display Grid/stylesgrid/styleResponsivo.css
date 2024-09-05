@@ -1,0 +1,13 @@
+/* Estilo para telas mobile */
+
+@media(max-width: 600px) {
+  .grid-container{
+      grid-template-columns: 2fr 2fr 5fr;
+  }
+
+  .grid-item{
+    font-size: 20px;
+    padding: 15px;
+  }
+
+}
