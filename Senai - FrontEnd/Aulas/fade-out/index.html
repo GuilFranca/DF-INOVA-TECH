@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito fade_out</title>
+
+    <style>
+
+        .effect-fade-out{
+            text-align: center;
+            transition: .5s;
+            opacity: .1;
+            animation: fadeOut linear 3s;
+        }
+        .effect-fade-out img{
+            width: 500px;
+            height: auto;
+        }
+        /* @keyframes fadeOut {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        } */
+
+        .effect-fade-out:hover{
+            opacity: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+<section class="effect-fade-out">
+
+    <img src="/img/gui.jpeg" alt="Guilhas">
+
+</section>
+
+</body>
+</html>
