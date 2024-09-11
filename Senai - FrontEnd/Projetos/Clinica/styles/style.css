@@ -117,6 +117,12 @@ main .intro .text p {
     color: white; /* Cor do texto */
     padding: 10px; /* Espaçamento interno */
     border-radius: 5px; /* Bordas arredondadas */
+    transition: .2s;
+}
+
+#especialidades ul li:hover{
+    background-color: #014132;
+    cursor: pointer;
 }
 
 /* Seção de galeria de fotos */
@@ -139,6 +145,11 @@ main .intro .text p {
     height: 150px; /* Define a altura de cada imagem da galeria */
     object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
     border-radius: 5px; /* Bordas arredondadas nas imagens */
+    transition: .5s;
+}
+
+.gallery img:hover{
+    scale: 1.5;
 }
 
 /* Estilos do formulário de contato */
