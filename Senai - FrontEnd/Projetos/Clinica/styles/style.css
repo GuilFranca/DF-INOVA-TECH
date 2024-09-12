@@ -64,151 +64,140 @@ header nav ul li a:hover::after{
     background-color: #e2f0d9;
 }
 
-.banner-text{
-    flex: 1;
+.banner-text h1{
+    color: #007b5e;
 }
 
 .banner img{
-    width: 300px;
+    width: 500px;
     border-radius: 10px;
     margin-left: 20px;
 }
 
-/* Seção de introdução */
-main .intro {
-    display: flex; /* Alinha a imagem e o texto da introdução lado a lado */
-    align-items: center; /* Centraliza verticalmente os elementos da introdução */
-    padding: 20px; /* Espaçamento interno da seção */
-    background-color: #fff; /* Cor de fundo branco */
+/* Início config main intro */
+
+main .intro{
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
-main .intro img {
-    width: 50%; /* A imagem ocupa metade da largura disponível */
-    border-radius: 10px; /* Borda arredondada na imagem */
-    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+.intro img{
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
-main .intro .text h2 {
-    color: #007b5e; /* Cor de destaque para o título */
+.intro .text h2{
+    color: #007b5e;
 }
 
-main .intro .text p {
-    font-size: 1.1em; /* Aumenta o tamanho do texto para melhorar a legibilidade */
+/* Inicio config especialidades */
+
+#especialidades{
+    text-align: center;
 }
 
-/* Seção de especialidades */
-#especialidades {
-    padding: 20px; /* Espaçamento interno da seção */
-    background-color: #e9e9e9; /* Cor de fundo suave */
+#especialidades h2{
+    color: #007b5e;
 }
 
-#especialidades h2 {
-    text-align: center; /* Centraliza o título da seção */
+.container-card{
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; /* Permite a quebra de linha se os cards não couberem */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno da área do container */
 }
 
-#especialidades ul {
-    list-style: none; /* Remove os marcadores da lista */
-    display: flex; /* Alinha as especialidades horizontalmente */
-    justify-content: space-around; /* Espaçamento igual entre os itens */
-}
-
-#especialidades ul li {
-    background-color: #007b5e; /* Cor de fundo das especialidades */
-    color: white; /* Cor do texto */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: .2s;
-}
-
-#especialidades ul li:hover{
-    background-color: #014132;
+.card{
+    background-color: #007b5e;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
     cursor: pointer;
 }
 
-/* Seção de galeria de fotos */
-#galeria {
-    padding: 20px; /* Espaçamento interno da seção */
+.card img{
+    width: 325px;
+    height: 250px;
 }
 
-#galeria h2 {
-    text-align: center; /* Centraliza o título da galeria */
+.card p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
-.gallery {
-    display: flex; /* Alinha as imagens lado a lado */
-    gap: 10px; /* Espaçamento entre as imagens */
-    justify-content: center; /* Centraliza a galeria na página */
+.card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    scale: 1.25;
 }
 
-.gallery img {
-    width: 200px; /* Define a largura de cada imagem da galeria */
-    height: 150px; /* Define a altura de cada imagem da galeria */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
-    border-radius: 5px; /* Bordas arredondadas nas imagens */
-    transition: .5s;
-}
+/* Inicio config form */
 
-.gallery img:hover{
-    scale: 1.5;
-}
-
-/* Estilos do formulário de contato */
+/* Estilize o contêiner do formulário */
 #formulario-contato {
-    display: flex; /* Usa Flexbox para centralizar o formulário */
+    display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    padding: 20px; /* Espaçamento interno da seção */
-    background-color: #fff; /* Cor de fundo branco */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column;
+    padding: 20px; /* Adiciona um pouco de espaço ao redor do formulário */
 }
 
+/* Estilize o formulário */
 #formulario-contato form {
-    display: flex; /* Alinha os itens do formulário verticalmente */
-    flex-direction: column; /* Alinha em coluna */
-    width: 100%; /* O formulário ocupa 100% da largura disponível */
-    max-width: 400px; /* Define uma largura máxima */
-    padding: 20px; /* Espaçamento interno do formulário */
-    background-color: #e9e9e9; /* Cor de fundo suave */
-    border-radius: 15px; /* Borda radial */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px; /* Define uma largura máxima para o formulário */
+    background-color: #f9f9f9; /* Adiciona um fundo claro ao formulário */
+    padding: 20px; /* Adiciona um pouco de espaço interno ao formulário */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
 }
 
-#formulario-contato h2 {
-    text-align: center; /* Centraliza o título do formulário */
-    color: #007b5e; /* Cor de destaque para o título */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+/* Estilize os campos do formulário */
+#formulario-contato form label {
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
-#formulario-contato label {
-    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
-    color: #333; /* Cor do texto dos rótulos */
+#formulario-contato form input[type="text"],
+#formulario-contato form input[type="email"],
+#formulario-contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-#formulario-contato input,
-#formulario-contato textarea {
-    margin-bottom: 15px; /* Espaçamento abaixo dos campos */
-    padding: 10px; /* Espaçamento interno dos campos */
-    border: 1px solid #ccc; /* Borda simples */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 1em; /* Tamanho da fonte dos campos */
+#formulario-contato form input[type="button"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-#formulario-contato button {
-    padding: 10px; /* Espaçamento interno do botão */
-    background-color: #007b5e; /* Cor de fundo do botão */
-    color: white; /* Cor do texto no botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Bordas arredondadas no botão */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    font-size: 1.1em; /* Aumenta o tamanho da fonte do botão */
+#formulario-contato form input[type="button"]:hover {
+    background-color: #0056b3; /* Cor do botão quando o cursor passa por cima */
 }
 
-#formulario-contato button:hover {
-    background-color: #005f47; /* Muda a cor do botão ao passar o mouse */
-}
 
-/* Estilos do rodapé */
-footer {
-    background-color: #333; /* Cor de fundo escura */
-    color: white; /* Cor do texto */
-    text-align: center; /* Centraliza o texto no rodapé */
-    padding: 20px; /* Espaçamento interno */
+
+/* Iniciando config footer */
+footer{
+    background-color: #007b5e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
