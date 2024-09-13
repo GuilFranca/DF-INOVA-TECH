@@ -1,0 +1,188 @@
+// CÓDIGO VENDEDORA DE CARROS - PARTE HTML
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAR Best Savior</title>
+  <!-- Link para uma biblioteca de ícones (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://via.placeholder.com/80x80" alt="Logo">
+    <h1>Vendedora de Carros</h1>
+    <div class="header-menu">
+      <select>
+        <option value="" disabled selected>Selecione o Catálogo</option>
+        <option>Carros Usados</option>
+        <option>Carros Novos</option>
+        <option>Promoções</option>
+      </select>
+      <select>
+        <option value="" disabled selected>Selecione a Marca</option>
+        <option>Ford</option>
+        <option>Chevrolet</option>
+        <option>Honda</option>
+      </select>
+      <select>
+        <option value="" disabled selected>Selecione Contato</option>
+        <option>Fale Conosco</option>
+        <option>Localização</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Carousel no Banner -->
+  <div class="banner">
+    <div class="slides">
+      <img src="https://via.placeholder.com/1920x400/ff7f7f" alt="Carro 1">
+      <img src="https://via.placeholder.com/1920x400/7fbf7f" alt="Carro 2">
+      <img src="https://via.placeholder.com/1920x400/7f7fff" alt="Carro 3">
+    </div>
+  </div>
+
+  <!-- Catálogo de Carros -->
+  <section class="catalog">
+    <div class="catalog-card">
+      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
+      <h3>Carro 1</h3>
+      <p>Descrição do carro 1. Excelente para a cidade.</p>
+      <button>Saiba Mais</button>
+    </div>
+    <div class="catalog-card">
+      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
+      <h3>Carro 1</h3>
+      <p>Descrição do carro 1. Excelente para a cidade.</p>
+      <button>Saiba Mais</button>
+    </div>
+    <div class="catalog-card">
+      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
+      <h3>Carro 1</h3>
+      <p>Descrição do carro 1. Excelente para a cidade.</p>
+      <button>Saiba Mais</button>
+    </div>
+    <div class="catalog-card">
+      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
+      <h3>Carro 1</h3>
+      <p>Descrição do carro 1. Excelente para a cidade.</p>
+      <button>Saiba Mais</button>
+    </div>
+    <div class="catalog-card">
+      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
+      <h3>Carro 1</h3>
+      <p>Descrição do carro 1. Excelente para a cidade.</p>
+      <button>Saiba Mais</button>
+    </div>
+    <div class="catalog-card">
+      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
+      <h3>Carro 1</h3>
+      <p>Descrição do carro 1. Excelente para a cidade.</p>
+      <button>Saiba Mais</button>
+    </div>
+  </section>
+
+  <!-- Formulário de Contato com Imagem ao Lado -->
+  <section class="form-container">
+    <div class="contact-form">
+      <h2>Entre em Contato</h2>
+      <form action="#">
+        <label for="nome"><i class="fas fa-user"></i>Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome:">
+
+        <label for="email"><i class="fas fa-envelope"></i>Email:</label>
+        <input type="email" id="email" placeholder="Digite seu email:">
+
+        <label for="message"><i class="fas fa-comment"></i>Qual carro deseja?</label>
+        <textarea id="nome" placeholder="Digite sua mensagem:"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="form-image">
+      <img src="../img/foto-da-loja.jpg" alt="Vendedora Savior Car">
+    </div>
+  </section>
+
+  <!-- Feedback dos Clientes -->
+
+
+  // PARTE FINAL DO HTML - PROJETO CAR SAVIOR
+  <!-- Feedback dos Clientes -->
+  <section class="feedback-grid">
+    <div class="feedback-card">
+      <h3>Cliente Laryssa</h3>
+      <p>Achei o carro perfeito! Recomendo a todos.</p>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+    <!-- Comentário 2 -->
+    <div class="feedback-card">
+      <h3>Cliente Fernando</h3>
+      <p>Achei o carro confortável!</p>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: #333; color: #fff; padding: 40px 50px;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+      <!-- Coluna 1: Menus de Navegação -->
+      <div style="flex: 1;">
+        <h3>Menu</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #fff; text-decoration: none;">Carros Usados</a></li>
+          <!-- Copie e cola esta mesma linha 4 vezes como abaixo-->
+          <li><a href="#" style="color: #fff; text-decoration: none;">Carros Novos</a></li>
+          <li><a href="#" style="color: #fff; text-decoration: none;">Promoções</a></li>
+          <li><a href="#" style="color: #fff; text-decoration: none;">Fale Conosco</a></li>
+          <li><a href="#" style="color: #fff; text-decoration: none;">Localização</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 2: Políticas e Termos -->
+      <div style="flex: 1;">
+        <h3>Políticas</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #fff; text-decoration: none;">Política de Privacidade</a></li>
+          <li><a href="#" style="color: #fff; text-decoration: none;">Termos de Serviço</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Formulário de Newsletter -->
+      <div style="flex: 1;">
+        <h3>Receba nossas Novidades</h3>
+        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+          <input type="email" name="email" placeholder="Seu email"
+            style="padding: 10px; border-radius: 5px; border: none;">
+          <button type="submit"
+            style="padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">Inscrever-se</button>
+        </form>
+      </div>
+    </div>
+
+    <div style="margin-top: 30px; text-align: center;">
+      <p>&copy; 2024 Vendedora de Carros. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
