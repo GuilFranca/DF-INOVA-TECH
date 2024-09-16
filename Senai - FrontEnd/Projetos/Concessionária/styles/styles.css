@@ -1,0 +1,158 @@
+*{
+    color: black;
+    font-family: poppinsregular;
+    margin: 0;
+}
+
+
+/* Cabeçalho */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+#text-header{
+    padding: 15px;
+    flex-direction: column;
+    line-height: 15px;
+}
+
+#text-header .auto{
+    color: white;
+    font-size: 35px;
+}
+
+#text-header .nova{
+    color: red;
+    margin-left: 35px;
+}
+
+nav a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: .5s;
+}
+
+nav a:hover{
+    background-color: red;
+    color: white;
+}
+
+select{
+    border-radius: 15px;
+}
+
+/* Corrigindo a redundância das selects */
+header select option:first-child {
+    color: #070707;
+    font-weight: bold;
+}
+
+/* Carrossel */
+
+/* Estilo do Carousel no Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-100%);
+    }
+
+    66% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Catálogo de Carros */
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 50px;
+}
+
+.catalog-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.catalog-card:hover {
+    transform: scale(1.05);
+}
+
+.catalog-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.catalog-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.catalog-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+#contato123 {
+    text-decoration: none;
+    background-color: #e72012;
+    height: 50px;
+    width: 120px;
+    color: white;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.catalog-card button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.catalog-card button:hover {
+    background-color: #e72012;
+}
+
+.catalog-card:hover {
+    transform: scale(1.05);
+}

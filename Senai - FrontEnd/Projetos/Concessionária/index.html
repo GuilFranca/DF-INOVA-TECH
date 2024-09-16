@@ -1,188 +1,140 @@
-// CÓDIGO VENDEDORA DE CARROS - PARTE HTML
-
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAR Best Savior</title>
-  <!-- Link para uma biblioteca de ícones (Font Awesome) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
 </head>
-
 <body>
+    
+    <!--Cabeçalho-->
+    <header>
 
-  <!-- Header -->
-  <header>
-    <img src="https://via.placeholder.com/80x80" alt="Logo">
-    <h1>Vendedora de Carros</h1>
-    <div class="header-menu">
-      <select>
-        <option value="" disabled selected>Selecione o Catálogo</option>
-        <option>Carros Usados</option>
-        <option>Carros Novos</option>
-        <option>Promoções</option>
-      </select>
-      <select>
-        <option value="" disabled selected>Selecione a Marca</option>
-        <option>Ford</option>
-        <option>Chevrolet</option>
-        <option>Honda</option>
-      </select>
-      <select>
-        <option value="" disabled selected>Selecione Contato</option>
-        <option>Fale Conosco</option>
-        <option>Localização</option>
-      </select>
-    </div>
-  </header>
+        <div id="text-header">
+        <h1 class="auto">Auto</h1>
+        <h1 class="nova">Nova</h1>
+        </div>
 
-  <!-- Carousel no Banner -->
-  <div class="banner">
-    <div class="slides">
-      <img src="https://via.placeholder.com/1920x400/ff7f7f" alt="Carro 1">
-      <img src="https://via.placeholder.com/1920x400/7fbf7f" alt="Carro 2">
-      <img src="https://via.placeholder.com/1920x400/7f7fff" alt="Carro 3">
-    </div>
-  </div>
+        <nav>
+            <select>
+                <option disabled selected>Selecione o Catálogo</option>
+                <option>Destaques</option>
+                <option>Lançamentos</option>
+                <option>Usados</option>
+            </select>
 
-  <!-- Catálogo de Carros -->
-  <section class="catalog">
-    <div class="catalog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
-      <h3>Carro 1</h3>
-      <p>Descrição do carro 1. Excelente para a cidade.</p>
-      <button>Saiba Mais</button>
-    </div>
-    <div class="catalog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
-      <h3>Carro 1</h3>
-      <p>Descrição do carro 1. Excelente para a cidade.</p>
-      <button>Saiba Mais</button>
-    </div>
-    <div class="catalog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
-      <h3>Carro 1</h3>
-      <p>Descrição do carro 1. Excelente para a cidade.</p>
-      <button>Saiba Mais</button>
-    </div>
-    <div class="catalog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
-      <h3>Carro 1</h3>
-      <p>Descrição do carro 1. Excelente para a cidade.</p>
-      <button>Saiba Mais</button>
-    </div>
-    <div class="catalog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
-      <h3>Carro 1</h3>
-      <p>Descrição do carro 1. Excelente para a cidade.</p>
-      <button>Saiba Mais</button>
-    </div>
-    <div class="catalog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Carro 1">
-      <h3>Carro 1</h3>
-      <p>Descrição do carro 1. Excelente para a cidade.</p>
-      <button>Saiba Mais</button>
-    </div>
-  </section>
+            <select>
+                <option disabled selected>Selecione o Tipo</option>
+                <option>SUV</option>
+                <option>Esportivos</option>
+                <option>Picapes</option>
+            </select>
 
-  <!-- Formulário de Contato com Imagem ao Lado -->
-  <section class="form-container">
-    <div class="contact-form">
-      <h2>Entre em Contato</h2>
-      <form action="#">
-        <label for="nome"><i class="fas fa-user"></i>Nome:</label>
-        <input type="text" id="nome" placeholder="Digite seu nome:">
+            <a href="#">Sobre Nós</a>
 
-        <label for="email"><i class="fas fa-envelope"></i>Email:</label>
-        <input type="email" id="email" placeholder="Digite seu email:">
+        </nav>
 
-        <label for="message"><i class="fas fa-comment"></i>Qual carro deseja?</label>
-        <textarea id="nome" placeholder="Digite sua mensagem:"></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-    <div class="form-image">
-      <img src="../img/foto-da-loja.jpg" alt="Vendedora Savior Car">
-    </div>
-  </section>
-
-  <!-- Feedback dos Clientes -->
+    </header>
 
 
-  // PARTE FINAL DO HTML - PROJETO CAR SAVIOR
-  <!-- Feedback dos Clientes -->
-  <section class="feedback-grid">
-    <div class="feedback-card">
-      <h3>Cliente Laryssa</h3>
-      <p>Achei o carro perfeito! Recomendo a todos.</p>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-      </div>
-    </div>
-    <!-- Comentário 2 -->
-    <div class="feedback-card">
-      <h3>Cliente Fernando</h3>
-      <p>Achei o carro confortável!</p>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer style="background-color: #333; color: #fff; padding: 40px 50px;">
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
-      <!-- Coluna 1: Menus de Navegação -->
-      <div style="flex: 1;">
-        <h3>Menu</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="#" style="color: #fff; text-decoration: none;">Carros Usados</a></li>
-          <!-- Copie e cola esta mesma linha 4 vezes como abaixo-->
-          <li><a href="#" style="color: #fff; text-decoration: none;">Carros Novos</a></li>
-          <li><a href="#" style="color: #fff; text-decoration: none;">Promoções</a></li>
-          <li><a href="#" style="color: #fff; text-decoration: none;">Fale Conosco</a></li>
-          <li><a href="#" style="color: #fff; text-decoration: none;">Localização</a></li>
-        </ul>
-      </div>
-
-      <!-- Coluna 2: Políticas e Termos -->
-      <div style="flex: 1;">
-        <h3>Políticas</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="#" style="color: #fff; text-decoration: none;">Política de Privacidade</a></li>
-          <li><a href="#" style="color: #fff; text-decoration: none;">Termos de Serviço</a></li>
-        </ul>
-      </div>
-
-      <!-- Coluna 3: Formulário de Newsletter -->
-      <div style="flex: 1;">
-        <h3>Receba nossas Novidades</h3>
-        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 10px;">
-          <input type="email" name="email" placeholder="Seu email"
-            style="padding: 10px; border-radius: 5px; border: none;">
-          <button type="submit"
-            style="padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">Inscrever-se</button>
-        </form>
-      </div>
+    <!-- Carousel no Banner -->
+    <div class="banner">
+        <div class="slides">
+            <img src="https://retornar.com.br/wp-content/uploads/2024/08/banner_SK_PADRAO_UNO_1080x518.jpg" alt="Carro 1">
+            <img src="https://static.rentcars.com/landing-page/aws-s3-ad5feae5e3a1e5cc3509de36131a24a3.png" alt="Carro 2">
+            <img src="https://img.freepik.com/fotos-premium/banner-de-um-carro-esportivo-azul-generico-e-sem-marca-rodando-na-ilustracao-generativa-de-ai-do-por-do-sol_110488-2347.jpg" alt="Carro 3">
+        </div>
     </div>
 
-    <div style="margin-top: 30px; text-align: center;">
-      <p>&copy; 2024 Vendedora de Carros. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+
+    <!-- Catálogo de Carros -->
+    <section class="catalog">
+        <div class="catalog-card">
+            <img src="https://www.hyundai.com.br/content/dam/hmb/header/vehicles/lateral_HB20_PlatinumPlus_PrataBrisk_2022.avif" alt="Carro 1">
+            <h3>HB20</h3>
+            <p>Conheça um dos carros mais vendidos do Brasil agora com acabamento premium e equipado com motor flex 1.0, faróis com luz diurna (DRL), airbags, direção elétrica e freios ABS de série.</p>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="catalog-card">
+            <img src="data:image/jpeg;base64,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" alt="Carro 1">
+            <h3>Polo</h3>
+            <p>O Volkswagen Polo atual, conhecido como Polo Mk6 (ou Polo 6ª geração), é um compacto moderno que combina tecnologia avançada, conforto e desempenho. Lançado em 2017, o Polo Mk6 representa uma evolução significativa em relação aos modelos anteriores e continua a ser uma escolha popular no segmento de hatchbacks.</p>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="catalog-card">
+            <img src="https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/cronos.webp" alt="Carro 1">
+            <h3>Cronos</h3>
+            <p>O Fiat Cronos é um sedã compacto com design elegante, bom espaço interno e opções de motor eficientes. Oferece conforto, tecnologia e versatilidade, ideal para uso urbano e em viagens.</p>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="catalog-card">
+            <img src="https://www.comprecar.com.br/storage/vehicles/big/190d1f48-1e3c-40eb-a6ca-56d6c667df16.webp" alt="Carro 1">
+            <h3>Marea</h3>
+            <p>O Fiat Marea é um sedã médio produzido pela Fiat, que teve sua produção iniciada em 1996 e continuou até 2007 em algumas regiões. Desenvolvido para substituir o Fiat Tempra, o Marea ofereceu um design moderno e uma série de características que buscavam combinar conforto e desempenho.</p>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="catalog-card">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_730176-MLB72187479418_102023-O.webp" alt="Carro 1">
+            <h3>Kadett</h3>
+            <p>O Fiat Fastback é um SUV cupê com design esportivo, motor turbo e tecnologias avançadas. Combina elegância, desempenho e conforto, sendo ideal para quem busca estilo e versatilidade.</p>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="catalog-card">
+            <img src="https://seminovosrj.com.br/fotos/1053/794377/1.jpg" alt="Carro 1">
+            <h3>Civic</h3>
+            <p>Veículo completo de fábrica! AR Condicionado, Direção Hidráulica, Vidro, travas e retrovisores elétricos, Rodas de liga leve, farois de neblina, o mais novo do Brasil!!! Desembaçador traseiro, computador de bordo, direção hidráulica, freios ABS, airbag duplo, entre outros itens.</p>
+            <button>Saiba Mais</button>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: #fff; padding: 40px 50px;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+            <!-- Coluna 1: Menus de Navegação -->
+            <div style="flex: 1;">
+                <h3>Menu</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Carros Usados</a></li>
+                    <!-- Copie e cola esta mesma linha 4 vezes como abaixo-->
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Carros Novos</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Promoções</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Fale Conosco</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Localização</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 2: Políticas e Termos -->
+            <div style="flex: 1;">
+                <h3>Políticas</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Política de Privacidade</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Termos de Serviço</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Formulário de Newsletter -->
+            <div style="flex: 1;">
+                <h3>Receba nossas Novidades</h3>
+                <form action="#" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="email" name="email" placeholder="Seu email"
+                        style="padding: 10px; border-radius: 5px; border: none;">
+                    <button type="submit"
+                        style="padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <p>&copy; 2024 Revendedora Autorizada. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
 
 
 </body>
-
 </html>
