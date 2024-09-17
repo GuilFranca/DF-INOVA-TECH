@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.banner {
+    background-image: url('https://jovembarrafm.com.br/wp-content/uploads/2023/06/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg');
+    height: 100vh; /* Altura total será utilizada */
+    background-size: cover; /* Tamanho do fundo do banner será coberto */
+    background-position: center; /* Cantraliza o banner */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    color: #ddd;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#cta-button {
+    background-color: #c90811;
+    color: white;
+    border: none;
+    width: 300px;
+    height: auto;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#cta-button:hover {
+    background-color: #f40612;
+}
+
+.btn{
+    background-color: #c90811;
+    color: white;
+    border: none;
+    width: 150px;
+    height: auto;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #ff000d;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+form h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+form input{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3d3939;
+    color: black;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.btn-login{
+    text-decoration: none;
+    background-color: #c90811;
+    color: white;
+    border: none;
+    width: 250px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: .5s;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn-login:hover{
+    background-color: #f40612;
+}
+
+.text-p{
+    font-size: 15px;
+    color: white;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.help{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-right: 85px;
+}
