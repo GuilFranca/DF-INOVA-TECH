@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10 rgba(0, 0, 0 ,0.1);
+}
+
+.botao{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    transition: all 0.s ease; /* all - elemento todo, ease - suave, out - brusco */
+}
+
+.botao:hover{
+    background-color: rgb(2, 73, 2);
+}
+
+.oculto{
+    display: none; /* Não é mostrado na tela */
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+}
