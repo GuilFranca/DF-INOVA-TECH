@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+    <section>
+        <div class="banner">
+        
+            <h1>Hello Word</h1>
+    
+        </div>
+    </section>
+
+
+    <script>
+        // let x = 10;
+        // console.log("O valor de x é: " + x);
+        // //Exibe a mensagem no console.
+
+        // window.alert("Estudem!"); //janela de alerta.
+
+        // let nome = window.prompt("Qual é o seu nome?"); //associa uma váriavel com o que o usuário digitar no prompt 
+        // console.log("Nome informado: " + nome);
+
+        // window.open("https://www.google.com", "_blank"); //Abre uma nova janela ou aba com o URL especificado
+
+        window.setTimeout(function(){
+            console.log("Executando após 2 segundos");
+        }, 2000); //5000 milissegundos = 5 segundos
+
+        window.confirm("Poogers?");
+
+        window.print(); // abre a janela de impressão
+
+        // window.close();
+
+        // window.setInterval(function(){
+        //     console.log("Você não quer poggar?")
+        // }, 2000);
+
+        // window.clearInterval(InvervalID);
+        // window.clearTimeout(timeoutID);
+        // //Cancelamento das SetInterval e SetTimeOut
+
+        // window.scroll(x,y) //Rola a página para a posição especificada.
+        // window.scrollBy(x,y) //Rola a página pela quantidade especificada.
+        // window.resizeTo(width,height) //Redimenciona a janela para a largura e altura especificadas.
+        // window.moveTo(x,y); //Move a janela para as coordenadas especificadas.
+        // window.document; // Iniciará uma alteração com o DOM
+
+        // //Navegação da página
+        // window.history (); //Histórico
+        // window.forward (); // Próxima janela
+        // window.back (); // Janela anterior
+        // window.go (0); // Navega no histórico, exemplo janela n° 5
+
+        // //Eventos da window
+        // window.addEventListener(event,function()); //Adcionará um evento
+        // window.getSelection; //Selecionará um determinado item
+        // window.removeEventListener(event, function) //Removerá o evento
+
+        // //Efeitos na janela
+        // window.focus; //foco
+        // window.blur; //Remove o foco da janela
+
+        // //Principais Consoles
+        // console.log(message); //Exibe uma mensagem
+        // console.error(message); //Exibe um pop-up de erro
+        // console.info(message); //Exibe um pop-up de informação
+        // console.warm(message); // Exibe um pop-up de aviso
+
+        // // Principais Consoles de saída
+        // console.clear // Limpa o console
+        // console.dir //Cria um diretório
+
+        //Exibe uma tabela com dados no console
+        let pessoas = [{nome: "Ana", idade: 28}, {nome: "Maraia", idade: 20}];
+        console.table(pessoas);
+
+        //Agrupa mensagens em uma hierarquia
+        console.group("Grupo de Logs");
+        console.log("Log dentro do grupo");
+        console.groupEnd();
+
+        //Exibe uma msg de erro se a condição for falsa
+        console.asser(2 === 3, "Erro: 2 não é igual a 3");
+    </script>
+
+</body>
+</html>
