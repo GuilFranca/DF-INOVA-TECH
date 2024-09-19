@@ -1,0 +1,86 @@
+css
+Copiar código
+/* Estilos gerais */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 45%;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Estilo do botão de remoção */
+button.remover {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.remover:hover {
+    background-color: #cc0000;
+}
+
+#imprimirTabela {
+    margin-top: 20px;
+    background-color: #28a745;
+}
+
+#imprimirTabela:hover {
+    background-color: #218838;
+}
+
