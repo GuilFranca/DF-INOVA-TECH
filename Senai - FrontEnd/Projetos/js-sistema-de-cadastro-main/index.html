@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos - Universidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Alunos</h1>
+        <form id="alunoForm">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="number" id="idade" placeholder="Idade" min="18" required>
+            <input type="text" id="curso" placeholder="Curso Desejado" required>
+            <input type="email" id="emails" placeholder="Emails (separados por vírgula)" required>
+            <button type="submit">Cadastrar Aluno</button>
+        </form>
+
+        <div id="alunosList"></div>
+
+        <div id="container-tabela">
+            <h1>Lista de Alunos Cadastrados</h1>
+            <table id="alunosTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Curso</th>
+                        <th>Emails</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As informações dos alunos serão inseridas aqui -->
+                </tbody>
+            </table>
+        </div>
+
+        <button id="btn-display">Mostrar Lista</button>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
