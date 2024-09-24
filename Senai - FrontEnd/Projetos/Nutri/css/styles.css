@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Globais */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+
+/* Config Cabeçalho */
+header{
+    background-color: #4b0082;
+    display: flex;
+    align-items: center; /* Alinhou no centro os elementos dentro da lista */
+    justify-content: space-between;
+}
+
+header img{
+    width: 75px;
+    padding: 10px 20px;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 20px;
+}
+
+nav li{
+    font-size: 20px;
+}
+
+/* Animação de linha embaixo do nav */
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: bold;
+    justify-content: space-between;
+    position: relative; /* Necessário para o pseudo-elemento ::after */
+    padding-bottom: 5px; /* Espaço extra para a linha embaixo */
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Animação da linha */
+}
+
+header nav ul li a:hover::after{
+    width: 100%; /* A linha aparece ao passar o mouse */
+}
+/* Fim Config Cabeçalho */
+
+
+
+/* Início Carrossel */
+/* Estilo do Carousel no Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/* FIM Carrossel */
+
+
+
+/* Início Cards de Especialidades */
+
+#especialidades{
+    text-align: center;
+    background-color: #e2f0d9;
+    padding-bottom: 75px;
+}
+
+#especialidades h2{
+    padding-top: 35px;
+    color: #007b5e;
+}
+
+.container-card{
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; /* Permite a quebra de linha se os cards não couberem */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno da área do container */
+}
+
+.card{
+    background-color: #4b0082;
+    width: 300px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.card img{
+    width: 300px;
+    height: 250px;
+}
+
+.card p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-top: 25px;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    scale: 1.10;
+}
+/* FIM Cards de Especialidades */
+
+
+
+/* Início do sobre nós */
+#sobre-nos{
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texto-sobre{
+    align-items: center;
+    margin: 0 auto;
+    width: 45%;
+}
+
+.texto-sobre h1{
+    margin-bottom: 10px;
+    color: #007b5e;
+    font-size: 30px;
+}
+
+.paulaNutri{
+    border-radius: 50%;
+    margin: 0 auto;
+}
+/* FIM do sobre nós */
+
+
+
+/* Início Video Cariani */
+#video{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #4b0082;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#video h1{
+    color: white;
+    padding: 20px;
+}
+
+.div-video iframe{
+    width: 800px;
+    height: 500px;
+}
+/* FIM Video Cariani */
+
+
+
+/* Início Calculadora IMC */
+
+.imc-calculator{
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.imc-calculator form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.imc-calculator h1{
+    margin-bottom: 20px;
+    color: #4b0082;
+}
+
+.imc-calculator form input{
+    border-radius: 5px;
+    border: 0px solid;
+    height: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.imc-calculator form button{
+    border-radius: 5px;
+    border: 1px solid;
+    width: 155px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #4b0082;
+    color: #ffffff;
+    font-size: bold;
+    transition: 0.5s;
+    padding: 5.5px;
+}
+
+.imc-calculator form button:hover{
+    background-color: #6a0dad;
+}
+/* FIM Calculadora IMC */
+
+
+
+/* Inicio config form */
+#formulario-contato{
+    border-radius: 15px;
+    display: flex;
+    margin: 20px auto; /* Que isso pai, slk, centraliza demais */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #ffffff;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#formulario-contato h2{
+    color: #000000;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+#formulario-contato form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+    border: 1px solid;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    border: 1px solid;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #007b5e;
+    border: 1px solid;
+    border-radius: 10px;
+    /* background: transparent; */
+    /* border: 2px solid;*/
+    color: #f5f5f5; 
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover{
+    background-color: #093811;
+    color: #ffffff;
+}
+/* FIM config form */
+
+
+/* Início config footer */
+footer {
+    background-color: #4b0082;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column form input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.footer-column form button {
+    padding: 10px;
+    background-color: #dda0dd;
+    border-radius: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-column form button:hover {
+    background-color: #6a0dad;
+    transition: background-color 0.3s ease;
+}
+
+footer p{
+    padding: 5px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/* FIM config footer */

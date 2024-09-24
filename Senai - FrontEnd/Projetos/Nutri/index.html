@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista</title>
+    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    
+    <header> <!-- Início do Cabeçalho -->
+        
+        <img src="./img/logo.png" alt="Logo">
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#imc">IMC</a></li>
+                <li><a href="#formulario-contato">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header> <!-- Fim do Cabeçalho -->
+
+    <!-- Início do Slider -->
+     <section id="inicio">
+        <div class="banner">
+            <div class="slides">
+                <img src="./img/VivaVida.png" alt="Viva">
+                <img src="./img/Banner-paula-3.png" alt="">
+                <img src="./img/ComaBem.png" alt="">
+                <img src="./img/oValorVivo.png" alt="">
+            </div>
+        </div>
+     </section>
+    <!-- Fim do Slider -->
+
+    <!-- Início Cards de especialidades -->
+    <section id="especialidades">
+
+        <h2>Nossas Especialidades</h2>
+
+        <!-- <ul>
+            <li>Cardiologia</li>
+            <li>Dermatologia</li>
+            <li>Ortopedia</li>
+            <li>Pediatria</li>
+        </ul> -->
+
+        <div class="container-card">
+
+            <div class="card">
+                <img src="/img/produtosNutri.jpg" alt="Produtos Nutricionais">
+                <p>Produtos Nutricionais</p>
+            </div>
+
+            <div class="card">
+                <img src="/img/examesMed.jpg" alt="Exames Médicos">
+                <p>Exames Médicos</p>
+            </div>
+
+            <div class="card">
+                <img src="/img/receitasSau.webp" alt="Receitas Saudáveis">
+                <p>Receitas Saudáveis</p>
+            </div>
+
+            <div class="card">
+                <img src="/img/massa.webp" alt="Calculadora ICM">
+                <p>Calculadora IMC</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Fim Cards de especialidades -->
+
+    <!-- Início Sobre Nós -->
+    <section id="sobre-nos">
+
+        <img src="./img/sobreNos.png" alt="Paula" class="paulaNutri">
+
+        <div class="texto-sobre">
+            <h1>SE CUIDE COM QUEM SABE</h1>
+            <P>Na VIVA VIDA, nossa missão é promover a saúde e o bem-estar através da nutrição personalizada. Com uma equipe de profissionais dedicados e apaixonados pela alimentação saudável, oferecemos atendimento individualizado que considera as necessidades e objetivos de cada paciente.
+            <br>
+            <br>
+            Acreditamos que a nutrição é a base para uma vida equilibrada e saudável. Nossa abordagem combina ciência, empatia e motivação, ajudando nossos pacientes a desenvolverem hábitos alimentares sustentáveis e a alcançarem suas metas de saúde.
+            <br>
+            <br>
+            Seja para emagrecimento, ganho de massa muscular ou simplesmente para melhorar a qualidade de vida, estamos aqui para guiar você em cada passo da sua jornada. Venha nos visitar e descubra como podemos transformar sua relação com a comida!</P>
+        </div>
+    </section>
+    <!-- FIM Sobre Nós -->
+
+    <!-- Início Vídeo Incorporado -->
+    <section id="video">
+        <h1>Conheça Nosso Trabalho</h1>
+        <div class="div-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ykkty8JCx30?si=_aCwym_iVotd6U59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- FIM Vídeo Incorporado -->
+
+
+    <!-- Início Calculadora IMC -->
+    <section id="imc" class="imc-calculator">
+        <h1>Calculadora IMC</h1>
+        <form onsubmit="calculateIMC(event)">
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" required>
+            <label for="height">Altura (m):</label>
+            <input type="number" id="height" step="0.01" required>
+            <button type="submit">Calcular IMC</button>
+        </form>
+        <p id="result"></p>
+    </section>
+    <!-- FIM Calculadora IMC -->
+
+
+    <!-- Formulário de Contato -->
+    <section id="formulario-contato">
+
+        <form>
+
+            <h2>Entre em contato</h2>
+
+            <form action="https://api.staticforms.xyz/submit" method="post">  
+                <label for="">Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                <label for="">Email</label>
+                <input type="email" name="Email" placeholder="Digite seu email" autocomplete="off" required>
+                <label for="">Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem" required></textarea> <!-- área de texto -->
+                <button type="submit">Enviar</button>
+        
+                <input type="hidden" name="accessKey" value="3ece324a-793c-4b74-9fc9-9c7745673422">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/formulario/obrigado.html">
+            </form><!-- method post: envia para o servidor. method get: consulta algum dado no servidor -->
+
+        </form>
+
+    </section>
+
+
+
+    <!-- Início do footer -->
+    <footer>
+        <div class="footer-column">
+            <h3>Contato</h3>
+            <p><a href="https://www.google.com.br/maps/preview">QNE 19 Lote 5 Casa 2</a></p>
+            <p><a href="https://web.whatsapp.com">93039-4569</a></p>
+            <p><a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&ddm=0">PaulaNutri@gmail.com</a></p>
+        </div>
+        <div class="footer-column">
+            <h3>Redes Sociais</h3>
+            <p><a href="https://www.instagram.com">Instagram</a></p>
+            <p><a href="https://www.youtube.com">YouTube</a></p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Twitter</a></p>
+        </div>
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Seu email">
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </footer>
+    <!-- FIM do footer -->
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
