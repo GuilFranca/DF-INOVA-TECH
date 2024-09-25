@@ -1,12 +1,8 @@
-function saveProduct(product, storageType){
-    let product = JSON.parse(loclaStorage.getItem(storageType)) || [];
+function saveProduct(product, storageType) {
+    let products = JSON.parse(localStorage.getItem(storageType)) || [];
     products.push(product);
     localStorage.setItem(storageType, JSON.stringify(products));
 }
-
-document.getElementById('productForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-});
 
 document.getElementById('productForm').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -26,25 +22,24 @@ document.getElementById('productForm').addEventListener('submit', (e) => {
 
     saveProduct(product, storageType);
     alert(`Produto ${productName} adicionado em ${storageType}.`);
-
-    document.getElementById('productForm').requestFullscreen();
 });
 
-function fetchAnimals(){
-    return new Promise((resolve, reject) => {fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response =>{
-            if(!response.ok) {
-                throw new Error('Erro ao buscar os dados');
-            }
-            return responde.json();
-        })
-        .then(data => resolve(data))
-        .catch(error => reject(error));
+function fetchAnimals() {
+    return new Promise((resolve, reject) => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar os dados');
+                }
+                return response.json(); // Corrigido aqui
+            })
+            .then(data => resolve(data))
+            .catch(error => reject(error));
     });
 }
 
 document.getElementById('fetchAnimals').addEventListener('click', () => {
-    fetchAnimals().then(animals =>{
+    fetchAnimals().then(animals => {
         const animalList = document.getElementById('animalList');
         animalList.innerHTML = '';
 
