@@ -1,0 +1,275 @@
+<!-- Tipo do documento HTML5 -->
+<!DOCTYPE html>
+<!-- Linguagem do site -->
+<html lang="pt-BR">
+<!-- tag cabeça do site -->
+<head>
+    <!-- Acentuação do site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Moderno com Interações</title>
+    <!-- Início tag style para editar o estilo da página index.html -->
+    <style>
+        /* Edita o style do corpo da página index.html */
+        body {
+            /* padroniza a font da página como Arial */
+            font-family: Arial, sans-serif;
+            /* Define a transição da cor do background em 0.3s e a cor também em 0.3s*/
+            transition: background-color 0.3s, color 0.3s;
+            /* Define a cor do background como #ffffff */
+            background-color: #ffffff;
+            /* Define a cor do conteúdo como #333 */
+            color: #333;
+        }
+
+        /* Edita o style do body quando um elemento tiver a class = dark */
+        body.dark {
+            /* Cor do background definida como #333 */
+            background-color: #333;
+            /* Cor do conteúdo como #ffffff */
+            color: #ffffff;
+        }
+
+        /* Edita o style da tag header */
+        header {
+            /* Define o background como #4CAF50 */
+            background: #4CAF50;
+            /* Define a cor do conteúdo dentro do header como white */
+            color: white;
+            /* Define o espaçamento entre o conteúdo e a borda de 10px em cima e embaixo e 20px na esquerda e na direita */
+            padding: 10px 20px;
+        }
+
+        /* Edita o style da tag nav */
+        nav {
+            /* Define o display da tag nav como sendo flexivel, tornando possível posicionar os elementos um do lado do outro na mesma linha */
+            display: flex;
+            /* Define que os elementos dentro da nav terão um espaçamento proporciona entre eles */
+            justify-content: space-between;
+            /* Alinha os itens do tag nav no centro */
+            align-items: center;
+        }
+
+        /* Edita o style da class = nav-list */
+        .nav-list {
+            /* Define como none o estilo da lista, fazendo assim com que a lista não tenha mais um "pontinho" na lateral de cada item da lista */
+            list-style: none;
+            /* Define o display da tag nav como sendo flexivel, tornando possível posicionar os elementos um do lado do outro na mesma linha */
+            display: flex;
+        }
+
+        /* Edita o style da li dentro da class = nav-list */
+        .nav-list li {
+            /* Define a margem como  */
+            margin: 0 15px;
+        }
+
+        /* Edita o style da class = menu-toggle */
+        .menu-toggle {
+            /* Define display como none, fazendo com que o mesmo não apareça  */
+            display: none;
+            /* Define a interação de quando o cursor passar por cima, indicar que é possível clicar */
+            cursor: pointer;
+        }
+
+        /* Edita o style da tag img dentro da class = image-carousel */
+        .image-carousel img {
+            /* Define a largura da img como 100% da página*/
+            width: 100%;
+            /* Define que o máximo de largura que a img pode chegar é de 300px */
+            max-width: 300px;
+            /* Define uma margem de 10px para todos os lado */
+            margin: 10px;
+        }
+
+        /* Edita o style da tag button */
+        button {
+            /* Define a cor do background do button como #4ACF50 */
+            background-color: #4CAF50;
+            /* Define a cor do texto como white */
+            color: white;
+            /* Define como none o valor de border, sendo assim, tirando a borda do button */
+            border: none;
+            /* Define o espaçamento entre o conteúdo e a borda de 10px em cima e embaixo e 15px na esquerda e na direita */
+            padding: 10px 15px;
+            /* Define a interação de quando o cursor passar por cima, indicar que é possível clicar */
+            cursor: pointer;
+        }
+
+        /* Edita o style da tag button quando o mouse passa por cima da mesma */
+        button:hover {
+            /* Trasnforma a escala do botão em 1.1 aumentando um pouco, */
+            transform: scale(1.1);
+            /* Define a tranição de transform em 0.2s */
+            transition: transform 0.2s;
+        }
+
+        /* Edita o style do id = scrollToTop */
+        #scrollToTop {
+            /* Define a posição como sendo fixa */
+            position: fixed;
+            /* Define a posição de 20px do bottom, sendo a parte inferior */
+            bottom: 20px;
+            /* Define a posição de 20px de right, sendo a parte lateral direita */
+            right: 20px;
+            /* Define display como none, fazendo com que o mesmo não apareça  */
+            display: none;
+        }
+
+        /* Responsividade */
+        /* Edita os valores abaixo quando o tamnho da tela é igual ou menor do que 768px */
+        @media (max-width: 768px) {
+            /* Edita o style da class = nav-list */
+            .nav-list {
+                /* Define display como none, fazendo com que o mesmo não apareça  */
+                display: none;
+                /* Define a direção dos elementos dentro da class como uma coluna, deixando assim um abaixo do outro */
+                flex-direction: column;
+            }
+
+            /* Edita o style da class = menu-toggle */
+            .menu-toggle {
+                /* Define o display como block, tornando o mesmo visível agora */
+                display: block;
+            }
+        } 
+
+    </style>
+    <!-- FIM tag style para editar o estilo da página index.html -->
+</head>
+<body>
+
+    <!-- Início do cabeçalho -->
+    <header>
+        <!-- Início da tag Navegação -->
+        <nav>
+            <!-- Divisão onde está presente a logo do site -->
+            <div class="logo">Meu Site</div>
+            <!-- Divisão onde está presente o MENU toggle, que será utilizado quando o site for aberto em uma tela com 768px ou menos -->
+            <div class="menu-toggle" id="menuToggle">☰</div>
+            <!-- Início das tags âconras presentes no nav para a navegação do site -->
+            <ul class="nav-list" id="navList">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><button id="themeToggle">Trocar Tema</button></li>
+            </ul>
+            <!-- FIM das tags âconras presentes no nav para a navegação do site -->
+        </nav>
+        <!-- Fim da tag Navegação -->
+         <!-- Botão para voltar a tela para o início utilizando o scroll do mouse -->
+        <button id="scrollToTop" title="Voltar ao Início">↑</button>
+    </header>
+    <!-- Fim do cabeçalho -->
+
+    <!-- Tag Main, que no caso corresponde ao conteúdo principal da página -->
+    <main>
+        <!-- Início da Tag section que separa uma seção para o que está dentro da mesma, sendo essa a seção home. Com id = home -->
+        <section id="home">
+            <!-- tag h1 que serve para inserir um título de nível 1 -->
+            <h1>Bem-vindo ao Meu Site</h1>
+            <!-- tag p que srve para inserir um parágrafo -->
+            <p>Explore as funcionalidades!</p>
+        </section>
+        <!-- Fim da tag section id = home -->
+
+        <!-- Início da section com id = about -->
+        <section id="about">
+            <!-- tag h2 que serve para inserir um título de nível 2 -->
+            <h2>Sobre Nós</h2>
+            <!-- tag p que srve para inserir um parágrafo -->
+            <p>Informações sobre o site.</p>
+            <!-- Início de uma divisão com a funcionalidade de um slide, onde serão expostas três imagens como em um carrossel -->
+            <div class="image-carousel">
+                <!-- tag img que é utilizada para inserir imagens no site -->
+                <img src="image1.jpg" alt="Imagem 1">
+                <img src="image2.jpg" alt="Imagem 2">
+                <img src="image3.jpg" alt="Imagem 3">
+            </div>
+            <!-- Fim da divisão do carrossel -->
+        </section>
+        <!-- Fim da section id = about -->
+
+        <!-- Início section id = contact -->
+        <section id="contact">
+            <!-- tag h2 que serve para inserir um título de nível 2 -->
+            <h2>Contato</h2>
+            <!-- Início tag form que é utilizada pra criar formulários para o usuário enviar informações, com id = contactForm-->
+            <form id="contactForm">
+                <!-- tag input que serve para o usuário escrever as informações, tendo como tipo email, com placeholder tendo a função de informar ao usuário o que deve ser escrito dentro do input -->
+                <input type="email" id="email" placeholder="Seu e-mail" required>
+                <!-- botão de envio para que seja possível enviar o e-mail -->
+                <button type="submit">Enviar</button>
+            </form>
+            <!-- FIM da tag form id = contactForm -->
+            <div id="emailFeedback"></div>
+        </section>
+        <!-- FIM section id = contact -->
+    </main>
+    <!-- FIM da tag main -->
+
+    <!-- Início da tag footer que é o rodape do site -->
+    <footer>
+        <!-- tag p, no qual se refere ao parágrafo que dá os créditos ao criador do site -->
+        <p>© 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+    <!-- Fim da tag footer -->
+
+    <!-- tag de script que possibilita o script do Java script na página index.html -->
+    <script>
+        // Alternar tema claro/escuro
+
+        // Declara a variável themeToggle, na qual é do tipo const, sendo esse o tipo que não é possível alterar o valor dentro da mesma. associando à variável através do DOM a id = 'themeToggle'
+        const themeToggle = document.getElementById('themeToggle');
+        // Declara a variável scrollToTopBtn, na qual é do tipo const, sendo esse o tipo que não é possível alterar o valor dentro da mesma. associando à variável através do DOM a id = 'scrollToTop'
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        // Declara a variável body, na qual é do tipo const, sendo esse o tipo que não é possível alterar o valor dentro da mesma. associando à variável através do DOM ao body do index.html'
+        const body = document.body;
+
+        // Caso a variável sofra o evento de click o receberá o uma class com o nome 'dark', fazendo assim com que troque as cores do site para o modo escuro
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+        });
+
+        // Validação de e-mail
+
+        // Declara a variável emailInput, na qual é do tipo const, sendo esse o tipo que não é possível alterar o valor dentro da mesma. associando à variável através do DOM a id = 'email'
+        const emailInput = document.getElementById('email');
+        // Declara a variável emailInput, na qual é do tipo const, sendo esse o tipo que não é possível alterar o valor dentro da mesma. associando à variável através do DOM a id = 'emailFeedback'
+        const emailFeedback = document.getElementById('emailFeedback');
+
+        // É feita a validação do email através da variável emailInput, utilizando a variável isValid como parâmetro se o que foi inserido dentro do inpu é realmente um email
+        emailInput.addEventListener('input', () => {
+            const emailValue = emailInput.value;
+            const isValid = /\\S+@\\S+\\.\\S+/.test(emailValue);
+            emailFeedback.textContent = isValid ? 'E-mail válido!' : 'E-mail inválido!';
+        });
+
+        // Scroll suave para voltar ao início
+
+        // Determina quando ficará visível o botão de scrollar a tela para o início automaticamente
+        window.onscroll = () => {
+            scrollToTopBtn.style.display = document.documentElement.scrollTop > 100 ? 'block' : 'none';
+        };
+
+        // Determina que caso a variável scrollToTopBtn for clicada o site irá scrollar automaticamente até o início da página
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Menu hambúrguer
+
+        // Declara a variável menuToggle, na qual é do tipo const, sendo esse o tipo que não é possível alterar o valor dentro da mesma. associando à variável através do DOM a id = 'menuToggle'
+        const menuToggle = document.getElementById('menuToggle');
+        // Declara a variável menuToggle, na qual é do tipo const, sendo esse o tipo que não é possível alterar o valor dentro da mesma. associando à variável através do DOM a id = 'navList'
+        const navList = document.getElementById('navList');
+
+        // Define que o evento de mostrar o nav na interace mobile será ativo quando a variável menuToggle ser clicado
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        }); 
+
+    </script>
+    <!-- FIM da tag script -->
+</body>
+</html> 
